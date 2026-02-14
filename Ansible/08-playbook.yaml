@@ -1,0 +1,10 @@
+- name: Prompt level variables
+  hosts: local
+  connection: local  
+  tasks:
+  - name: Print info from inventory
+    ansible.builtin.debug:
+      msg: "{{MSG}}"
+      
+ 
+

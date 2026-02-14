@@ -1,0 +1,12 @@
+- name: File level variables
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml   
+  tasks:
+  - name: Prinat variables
+    ansible.builtin.debug:
+      msg: "Course is: {{ COURSE}}, Trainer is: {{ TRAINER}}"
+      
+ 
+

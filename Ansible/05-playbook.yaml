@@ -1,0 +1,16 @@
+- name: Play level variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "Devops with AWS"
+    DURATION: "140 Hours"
+    TRAINER: "Shivansh"
+  tasks:
+  - name: Override and prinat task varaibles
+    vars:
+     TRAINER: "Shivansh - Local"
+    ansible.builtin.debug:
+      msg: "Course is: {{ COURSE}}, Trainer is: {{ TRAINER}}"
+      
+ 
+

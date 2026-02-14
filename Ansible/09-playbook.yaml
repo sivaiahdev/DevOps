@@ -1,4 +1,4 @@
-- name: Local level variables
+- name: Extra variables
   hosts: local
   connection: local  
   tasks:

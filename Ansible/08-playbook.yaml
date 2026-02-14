@@ -1,4 +1,4 @@
-- name: Prompt level variables
+- name: Inventory level variables
   hosts: local
   connection: local  
   tasks:
